@@ -1,0 +1,44 @@
+<!--102. Acessar Elementos HTML no Componente com "@ViewChildren” -->
+
+<button
+  #meuButton
+  class="btn-{{ i }}"
+  *ngFor="let btn of buttonList; let i = index"
+  (click)="changeColor($event)"> {{ btn }} </button>
+
+<button 
+(click)="resetButtons()">Resetar</button>
+
+<button 
+(click)="first()">Pegar primeiro</button>
+
+<button 
+(click)="remove()">Remover Item</button>
+
+
+<!--101. Configuração "static" do "@ViewChild -->
+
+<!-- Meu Input: 
+<input
+ type="text"
+  #meuInput
+  />
+<br><br> -->
+
+<!-- Meu input: <input type="text" #meuInput />
+
+<button (click)="updateInputText()">Atualizar</button>
+
+<button (click)="focus()">Foco</button>
+
+<div #minhaDiv>
+  Conteúdo Inicial.
+</div>
+
+<button (click)="updateDivContent()">Mudar Conteúdo</button>
+<br><br>
+
+<app-filho #filhoComp></app-filho>
+
+<button (click)="hello()">Oi</button> -->
+
